@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopEasy</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">ShopEasy</div>
+    <div class="outer-box">
+      <div class="inner-box">
+        <img src="shirts.jpg" class="product-img" />
+        <h3 class="title">Classic Cotton T-Shirt</h3>
+        <p class="desc">
+          Soft, breathable cotton. Regular fit. Available in multiple colors.
+        </p>
+        <p class="price">₹799 <span class="old-price">₹1,499</span></p>
+        <button class="btn">Add to Cart</button>
+      </div>
+    </div>
+  </body>
+</html>
