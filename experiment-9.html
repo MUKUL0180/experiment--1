@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Product Grid</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        h2 {
+    text-align: center;
+}
+
+body {
+    background-color: lightgray;
+}
+
+/* --------- Desktop (default) --------- */
+.container {
+    display: grid;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    max-width: 1200px;
+    margin: auto;
+}
+
+.product {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.product-image {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: auto;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);     }
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+    </style>
+  </head>
+  <body>
+    <h2>Responsive Product Grid</h2>
+    <div class="container">
+      <div class="product product1">
+        <img src="#" class="product-image" alt="Product 1" />
+        <h3 class="header">Product 1</h3>
+        <p class="desc">High Quality item with great features</p>
+        <p class = "price">₹499</p>
+
+      </div>
+      <div class="product product2">
+        <img src="#" class="product-image" alt="Product2" />
+        <h3 class="header">Product 2</h3>
+        <p class="desc">Durable and stylish for daily use</p>
+        <p class = "price">₹799</p>
+      </div>
+      <div class="product product3">
+        <img src="#" class="product-image" alt="Product3" />
+        <h3 class="header">Product 3</h3>
+        <p class="desc">Lightweight and comfortable</p>
+        <p class = "price">₹1299</p>
+      </div>
+      <div class="product product4">
+        <img src="#" class="product-image" alt="Product4" />
+        <h3 class="header">Product 4</h3>
+        <p class="desc">Trendy design with premium quality</p>
+        <p class = "price">₹999</p>
+      </div>
+    </div>
+  </body>
+</html>
